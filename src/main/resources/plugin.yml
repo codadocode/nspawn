@@ -1,0 +1,31 @@
+name: Nspawn
+main: br.com.nareba.nspawn.Nspawn
+version: "1.0.0"
+api: ["1.0.5"]
+author: Felipe Pereira
+commands:
+  setspawn:
+    usage: "/setspawn"
+    permission: nspawn.setspawn
+    permission-message: "You do not have the required permission to run /setspawn"
+  spawn:
+    usage: "/spawn"
+    permission: nspawn.spawn
+    permission-message: "You do not have the required permission to run /spawn"
+  delspawn:
+    usage: "/delspawn"
+    permission: nspawn.delspawn
+    permission-message: "You do not have the required permission to run /delspawn"
+  level:
+    usage: "/level"
+    permission: nspawn.level
+    permission-message: "You do not have the required permission to run /level"
+permissions:
+  nspawn.setspawn:
+    default: false
+  nspawn.spawn:
+    default: true
+  nspawn.delspawn:
+    default: false
+  nspawn.level:
+    default: false
